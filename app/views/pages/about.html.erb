@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Alpha Blog about page</title>
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+<header>
+  <h1>ALPHA BLOG</h1>
+  <h4>random stuff by Marc</h4>
+</header>
+
+<header>
+  <%= image_tag("Mountain_Range.jpg", class: "center") %>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <br>
+      <li><a href="#"; target="_blank">Some Place</a></li>
+      <br>
+      <li><a href="#"; target="_blank">Some Other Place</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>A little about Alpha Blog</h2>
+    <p>
+      We covered most of this in the <%= link_to 'Welcome Page',
+      root_path %> soooooooo...
+    </p>
+    <iframe
+      width="300" height="160"
+      src="https://www.youtube.com/embed/QH2-TGUlwu4?controls=0&autoplay=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </article>
+</section>
+
+<footer>
+  <p>not made by SquareSpace</p>
+</footer>
+
+</body>
+</html>

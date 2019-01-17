@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title> Aplha Blog home page </title>
+  <!-- Don't need to reference stylesheet if it in apps/assets/stylesheet -->
+  <!-- Rails automatically imports it through 'asset pipeline' -->
+  <!-- <link rel="stylesheet" href="style_sheet.css"> -->
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+<header>
+  <h1>ALPHA BLOG</h1>
+  <h4>random stuff by Marc</h4>
+</header>
+
+<header>
+  <!-- References the image in apps/assets/images and centers based of stylesheet -->
+  <%= image_tag("Mountain_Range.jpg", class: "center") %>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><%= link_to 'About', about_path %></li>
+      <br>
+      <li><a href="#"; target="_blank">Some Place</a></li>
+      <br>
+      <li><a href="#"; target="_blank">Some Other Place</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>Welcome</h2>
+    <p>
+      Welcome to Alpha Blog, a place where we talk about things that
+      may or may not matter. The subject matter is up for debate, the
+      frequency or posts is as volitile as the internet, and the view
+      count is guarenteed to be at least 1.
+    </p>
+    <p>
+      I also have no idea what I'm doing :P
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p>not made by SquareSpace</p>
+</footer>
+
+</body>
+</html>

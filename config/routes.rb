@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+  # Priority is based on order of creation: first -> highest priority
+  
   # Changes root page to the home page
   root 'pages#home'
   get 'about', to: 'pages#about'
@@ -14,5 +15,4 @@ Rails.application.routes.draw do
     # Show article path
     # Index article path
 
-  # Priority is based on order of creation: first -> highest priority
 end

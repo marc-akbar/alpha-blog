@@ -9,8 +9,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <!-- Not wrapping the 'article' pages -->
   <body>
+  <% flash.each do |name, msg| %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
   <%= yield %>
   </body>
 </html>

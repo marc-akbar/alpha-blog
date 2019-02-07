@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+$navbar-default-bg: black;
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+body { padding-top: 50px; }
+
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+ul.nav a:hover { color: #ff8600 !important; }
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: rgb(66, 134, 244);
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('Flatirons1.jpg');
+  background-size: cover;
+  height: 730px;
+}
+
+.jumbotron h1 {
+  font-family: 'Amatic SC', cursive;
+  color: #ff8600;
+  font-size: 1400%;
+  font-weight: bold;
+  margin: 5px 0 30px;
+  letter-spacing: -1px;
+}
+
+footer {
+  margin: 45px 10px 0 10px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #ff8600;
+  text-decoration: none;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+float li {
+  float: left;
+  margin-left: 15px;
+}

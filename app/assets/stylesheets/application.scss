@@ -15,7 +15,10 @@ $navbar-default-bg: black;
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-body { padding-top: 50px; }
+body {
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .navbar {
   font-family: 'Open Sans', sans-serif;
@@ -38,6 +41,15 @@ ul.nav a:hover { color: #ff8600 !important; }
   text-decoration: none;
 }
 
+#title {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: #ff8600;
+  font-size: 6em;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
 .center {
   text-align: center;
 }
@@ -51,7 +63,7 @@ ul.nav a:hover { color: #ff8600 !important; }
 .jumbotron h1 {
   font-family: 'Amatic SC', cursive;
   color: #ff8600;
-  font-size: 1400%;
+  font-size: 1750%;
   font-weight: bold;
   margin: 5px 0 30px;
   letter-spacing: -1px;

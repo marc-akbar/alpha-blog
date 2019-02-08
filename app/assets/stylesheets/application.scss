@@ -18,15 +18,8 @@ $navbar-default-bg: black;
 body {
   padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #e3ebf7;
 }
-
-.navbar {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-ul.nav a:hover { color: #ff8600 !important; }
 
 #logo {
   float: left;
@@ -54,6 +47,14 @@ ul.nav a:hover { color: #ff8600 !important; }
   text-align: center;
 }
 
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+ul.nav a:hover { color: #ff8600 !important; }
+
 .jumbotron {
   background-image: asset-url('Flatirons1.jpg');
   background-size: cover;
@@ -69,6 +70,14 @@ ul.nav a:hover { color: #ff8600 !important; }
   letter-spacing: -1px;
 }
 
+.thumbnail {
+  max-height: 100;
+}
+
+a.thumbnail:hover{
+  text-decoration: none;
+}
+
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
@@ -78,10 +87,20 @@ ul.nav a:hover { color: #ff8600 !important; }
   margin-top: 0;
 }
 
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 footer {
   margin: 45px 10px 0 10px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #dbdbdb;
   color: #777;
 }
 

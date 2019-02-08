@@ -1,48 +1,47 @@
-<head>
-  <title>Alpha Blog about page</title>
-  <meta charset="utf-8"/>
-</head>
+<div class="jumbotron">
+  <div class="container">
+    <h1>About</h1>
+  </div>
+</div>
 
-<body>
-<header>
-  <h1>ALPHA BLOG</h1>
-  <h4>random stuff by Marc</h4>
-</header>
-
-<header>
-  <%= image_tag("Mountain_Range.jpg", class: "center") %>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><%= link_to 'Home', root_path %></li>
-      <br>
-      <li><%= link_to 'Alpha Blog', articles_path %></li>
-      <br>
-      <li><a href="#"; target="_blank">Some Other Place</a></li>
-    </ul>
-  </nav>
-
-  <article>
-    <h2>A little about Alpha Blog</h2>
+<h2 id="title">A Little About Me</h2>
+<div class="container-fluid">
+  <div class="well col-xs-8 col-xs-offset-2">
     <p>
-      We covered most of this in the <%= link_to 'Welcome Page',
-      root_path %> soooooooo...
+      Space filler paragraph that has nothing to do with me
+      but a lot to do with routesetting...and cats:
     </p>
-    <iframe
-      width="300" height="160"
-      src="https://www.youtube.com/embed/QH2-TGUlwu4?controls=0&autoplay=1"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </article>
-</section>
-
-<footer>
-  <p>not made by SquareSpace</p>
-</footer>
-
-</body>
-</html>
+    <p>
+      At the 2017 IFSC World Cup bouldering finals in Munich in August,
+      Serbian climber Stasa Gejo stepped onto two volumes shaped like
+      Star Trek logos, leaned starfish-style to an elongated pyramid,
+      and then pawed to the top. On the men’s side, German Jan Hojer
+      topped a dynamic parkour-style run-across with a triple-catch
+      double dyno. And in the commentator’s booth, German Alex Megos,
+      who’d last competed internationally in 2012, was asked if watching
+      made him want to compete again. He replied, <q>Honestly, I’m not
+      that big of a fan of jumping around.</q>
+    </p>
+    <p>
+      This <q>jumping around</q> represents a shift in the last decade as
+      the <abbr title="International Federation of Sport Climbing">IFSC</abbr>
+      World Cup’s competition style has shifted toward a more audience-friendly
+      “skate style,” applying wild, dynamic moves and elements of
+      parkour to boulder problems and routes. Not surprisingly, a
+      debate has started in the comp scene between purists who want
+      the sport to stay true to its roots and athletes and route-setters
+      who enjoy the new style. The debate has also spilled into local
+      gyms, where setters set this style for competition teams, or simply
+      like the big volumes and new-school movement—sometimes to the
+      chagrin of gym members.
+    </p><br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        width="300" height="160"
+        src="https://www.youtube.com/embed/QH2-TGUlwu4?controls=0&autoplay=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

@@ -63,10 +63,19 @@ ul.nav a:hover { color: #ff8600 !important; }
 .jumbotron h1 {
   font-family: 'Amatic SC', cursive;
   color: #ff8600;
-  font-size: 1750%;
+  font-size: 1600%;
   font-weight: bold;
   margin: 5px 0 30px;
   letter-spacing: -1px;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 footer {
@@ -90,7 +99,7 @@ footer ul {
   list-style: none;
 }
 
-float li {
+footer li {
   float: left;
   margin-left: 15px;
 }

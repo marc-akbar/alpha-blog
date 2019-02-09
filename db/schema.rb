@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_01_20_235748) do
 
-  # table created with migration
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "description"

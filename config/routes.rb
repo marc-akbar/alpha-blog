@@ -15,4 +15,7 @@ Rails.application.routes.draw do
     # Show article path
     # Index article path
 
+  get 'signup', to: 'users#new'
+  resource :users, except: [:new]
+
 end

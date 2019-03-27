@@ -1,12 +1,13 @@
 <div>
   <footer class="footer">
     <small>
-      Copyright &copy; <a href="#">not made by SquareSpace</a>
-      but by <a href="#">Marc</a>
+      Copyright &copy; not made by SquareSpace
+      <br>
+      was made by <%= link_to "Marc", User.find(5) %>
     </small>
     <nav>
       <ul>
-        <li><%= link_to "About", about_path %></li>
+        <li><small><%= link_to "About", about_path %></small></li>
       </ul>
     </nav>
   </footer>

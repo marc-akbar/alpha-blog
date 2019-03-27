@@ -30,10 +30,6 @@ body {
   font-weight: bold;
 }
 
-#logo:hover {
-  text-decoration: none;
-}
-
 #title {
   text-align: center;
   font-family: 'Amatic SC', cursive;
@@ -50,10 +46,17 @@ body {
 .navbar {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
 }
 
+// Change color of navbar links
+ul.nav a:link { color: #b3b3b3; }
+ul.nav a:visited { color: #b3b3b3; }
 ul.nav a:hover { color: #ff8600 !important; }
+
+// Change color of dropdown menu items
+ul.nav li.dropdown ul.dropdown-menu { background-color: #000000; }
+ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
 
 .jumbotron {
   background-image: asset-url('Flatirons1.jpg');
@@ -78,7 +81,7 @@ a.thumbnail:hover{
   text-decoration: none;
 }
 
-.article-mete-details {
+.article-meta-details {
   margin-top: 15px;
 }
 

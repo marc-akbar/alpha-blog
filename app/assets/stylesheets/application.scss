@@ -39,7 +39,6 @@ a:link { text-decoration: none; }
   color: #ff8600;
   font-size: 6em;
   font-weight: bold;
-  letter-spacing: -2px;
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer */
   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
@@ -63,7 +62,7 @@ ul.nav a:visited { color: #b3b3b3; }
 ul.nav a:hover { color: #ff8600 !important; }
 
 // Change color of dropdown menu items
-ul.nav li.dropdown ul.dropdown-menu a:link { background-color: #000000; }
+ul.nav li.dropdown ul.dropdown-menu { background-color: #000000; }
 ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
 
 .jumbotron {

@@ -1,5 +1,6 @@
 require 'test_helper'
-
+# Create unit test from ActiveSupport
+# These test models and make individual units like validations work
 class ArticleCategoryTest < ActiveSupport::TestCase
 
   def setup

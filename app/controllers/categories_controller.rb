@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  # Similar method commented info in articles_controller
   before_action :set_category, only: [:edit, :update, :show, :destroy]
   before_action :require_admin, except: [:index, :show]
 
@@ -51,6 +52,7 @@ class CategoriesController < ApplicationController
     params.require(:category).permit(:name)
   end
 
+  # True if not logged in or user is not admin
   def require_admin
     if !logged_in? || (logged_in? and !current_user.admin?)
       flash[:danger] = "Only admins can perform that action"

@@ -1,22 +1,31 @@
+<!-- Wrapper for all html.erb files -->
 <!DOCTYPE html>
 <html lang="en-US">
 <html>
+  <!-- Info for app in head -->
   <head>
     <title>Alpha Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!-- Link to google fonts for Just Another Hand, Acme and Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Acme|Open+Sans" rel="stylesheet">
     <%= favicon_link_tag asset_path('icon.png') %>
+    <%# Links to stylesheets and javascript files %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%# Renders navigation bar %>
     <%= render 'layouts/navigation' %>
+    <%# Renders any flash messages %>
     <%= render 'layouts/messages' %>
+    <%# Renders content of web page %>
     <%= yield %>
+    <%# Renders footer %>
     <%= render 'layouts/footer' %>
     <br><br>
-    <%# <%= debug(params) if Rails.env.development? %>
+    <%# Renders debug information in deveopment only %>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

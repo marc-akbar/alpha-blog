@@ -10,10 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  */
+
 $navbar-default-bg: black;
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 body {
   padding-top: 50px;
@@ -24,6 +25,7 @@ body {
 // Removes underline from all links when hovered
 a:link { text-decoration: none; }
 
+// Syle logo in navbar
 #logo {
   float: left;
   font-size: 1.7em;
@@ -33,6 +35,7 @@ a:link { text-decoration: none; }
   font-weight: bold;
 }
 
+// Style title used for most pages
 #title {
   text-align: center;
   font-family: 'Acme', sans-serif;
@@ -65,19 +68,21 @@ ul.nav a:hover { color: #ff8600 !important; }
 ul.nav li.dropdown ul.dropdown-menu { background-color: #000000; }
 ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
 
+// Add photo to jumbotron in home/about pages
 .jumbotron {
   background-image: asset-url('Flatirons1.jpg');
   background-size: cover;
   height: 730px;
 }
 
+// Style jumbotron
 .jumbotron h1 {
   font-family: 'Just Another Hand';
   color: #ff8600;
   font-size: 1550%;
-  // font-weight: bold;
   margin: 5px 0 30px;
   letter-spacing: -1px;
+  // Disable user ability to select text
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer */
   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
@@ -87,10 +92,10 @@ ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
 
 .thumbnail { max-height: 100; }
 
-.thumbnail > .caption a:hover { text-decoration: none !important; }
-
+// Style details under article view
 .article-meta-details { margin-top: 15px; }
 
+// Add line above 'RUD' actions
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
@@ -98,9 +103,11 @@ ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
 
 .description { margin-top: 0; }
 
+// Style title of article in index view
 .article-title {
+  font-family: 'Acme', sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .article-body {
@@ -108,11 +115,13 @@ ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
   padding-bottom: 15px;
 }
 
+// Style listing for categories
 .listing {
   list-style: none;
   padding-left: 0;
 }
 
+// Catagory listing badge
 .badge {
   background-color: #cef6f5;
   text-transform: uppercase;
@@ -120,6 +129,7 @@ ul.nav li.dropdown ul.dropdown-menu a:hover { background-color: #000000; }
   font-weight: bold;
 }
 
+// Ensure checkbox in windows is aligned
 .input_checkbox input { width: auto !important; }
 
 footer {

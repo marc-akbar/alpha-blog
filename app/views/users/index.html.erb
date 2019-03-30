@@ -5,12 +5,16 @@
       <ul class="listing">
         <div class="row">
           <div class="well col-md-4 col-md-offset-4">
+            <!-- links gravatar image to user page -->
             <li><%= link_to gravatar_for(user), user_path(user) %></li>
             <li class="article-title">
+              <%# Also links user name to user page %>
               <%= link_to user.username, user_path(user) %>
             </li>
+            <!-- Counts how many articles user has -->
             <li><small><%= pluralize(user.articles.count, "article") if user.articles %></small><li>
             <% if logged_in? and current_user.admin? %>
+              <%# Actions only available to associated user and admin %>
               <li><%= link_to "Delete this user", user_path(user), method: :delete,
                       data: { confirm: "Are you sure you want to delete #{user.username}'s account and all of their articles?" },
                       class: "btn btn-xs btn-danger" %></li>

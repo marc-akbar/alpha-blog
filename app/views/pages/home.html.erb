@@ -4,10 +4,13 @@
   </div>
 </div>
 
+<!-- Three recent articles in thumbnails -->
 <h2 id="title">Recent Articles</h2>
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-sm-4">
+      <!-- a class used for bootstrap formatting -->
+      <!-- links thumbnail to article found by name -->
       <a class="thumbnail"<%= link_to Article.find_by(title: "Via Ferrata in Innsbruck") do %>
         <%= image_tag("Via_ferrata.jpg", alt: "Via Ferrata") %>
         <div class="caption">

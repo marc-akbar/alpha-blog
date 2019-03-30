@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  # Important to have these actions in order
+  # Similar method commented info in articles_controller
   before_action :set_user, only: [:edit, :update, :show, :destroy]
   before_action :require_same_user, only: [:edit, :update, :destroy]
   before_action :require_admin, only: [:destroy]

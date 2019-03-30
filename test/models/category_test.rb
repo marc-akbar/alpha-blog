@@ -1,5 +1,6 @@
 require 'test_helper'
-
+# Create unit test from ActiveSupport
+# These test models and make individual units like validations work
 class CategoryTest < ActiveSupport::TestCase
 
   def setup
@@ -7,10 +8,12 @@ class CategoryTest < ActiveSupport::TestCase
   end
 
   test "category should be valid" do
+    # Test validations
     assert @category.valid?
   end
 
   test "name should be present" do
+    # Cannot be an empty string
     @category.name = " "
     assert_not @category.valid?
   end

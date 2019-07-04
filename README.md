@@ -1,6 +1,6 @@
 # README
 
-This is the alpha-blog app on the Complete Ruby on Rails Developer Course.
+This is an alpha-blog app on the Complete Ruby on Rails Developer Course.
 
 The blog incorporates basic MVC functionality with one-to-many and many-to-many
 associations, authentication systems, and styling with Bootstrap 3.4

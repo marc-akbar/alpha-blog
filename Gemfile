@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.2.1'
 # Controller testing for assert_template
 gem 'rails-controller-testing'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use Bcrypt to secure passwords
 gem 'bcrypt', '~> 3.1.7'
 # Pagination gems
